@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ma galerie de photos interactive</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Ma galerie de photos interactive</h1>
+  </header>
+
+  <main>
+    <h2>Aperçu</h2>
+    <div id="image" aria-live="polite">
+      Passez la souris ou naviguez avec la touche Tab sur une image ci-dessous pour l'afficher ici.
+    </div>
+
+    <h2>Les images</h2>
+    <div class="gallery">
+      <figure>
+        <img src="images/montagne.svg" alt="Montagnes enneigées au lever du soleil"
+             onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <figcaption>Montagnes</figcaption>
+      </figure>
+      <figure>
+        <img src="images/plage.svg" alt="Plage de sable avec vagues turquoise"
+             onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <figcaption>Plage</figcaption>
+      </figure>
+      <figure>
+        <img src="images/foret.svg" alt="Forêt de sapins dans la brume"
+             onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <figcaption>Forêt</figcaption>
+      </figure>
+      <figure>
+        <img src="images/desert.svg" alt="Dunes du désert au coucher du soleil"
+             onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <figcaption>Désert</figcaption>
+      </figure>
+      <figure>
+        <img src="images/ville.svg" alt="Silhouette d'une ville la nuit"
+             onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <figcaption>Ville</figcaption>
+      </figure>
+      <figure>
+        <img src="images/lac.svg" alt="Lac calme entouré de collines"
+             onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <figcaption>Lac</figcaption>
+      </figure>
+    </div>
+  </main>
+</body>
+</html>
